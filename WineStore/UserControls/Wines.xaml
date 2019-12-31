@@ -1,0 +1,253 @@
+﻿<UserControl x:Class="WineStore.UserControls.Wines"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WineStore.UserControls"
+             mc:Ignorable="d" 
+              d:DesignHeight="360" d:DesignWidth="800">
+   
+        <Grid x:Name="GridMain"  Background="#FFEBCD">
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.RowSpan="5" VerticalScrollBarVisibility="Hidden">
+                <StackPanel x:Name="stackPanelWines" Grid.RowSpan="5">
+                <GroupBox x:Name="GroupBoxTitle"  Header="Title" Padding="5" >
+                    <TextBox x:Name="TitleWines">
+                        
+                    </TextBox>
+                </GroupBox>
+                <GroupBox x:Name="GroupBoxCategory"  Header="Category" Padding="5" >
+                    <Expander Header="show more">
+                        <StackPanel x:Name="CategoryWines" RadioButton.Checked="CategoryWines_Checked">
+                    <RadioButton GroupName="Category"  Margin="3">Still Wines</RadioButton>
+                    <RadioButton GroupName="Category" Margin="3">Sparkling Wines</RadioButton>
+                    <RadioButton GroupName="Category" Margin="3">Sweet Wines</RadioButton>
+                    <RadioButton GroupName="Category" Margin="3">Fortified Wines</RadioButton>
+                </StackPanel>
+                        </Expander>
+                </GroupBox>
+            <GroupBox Header="Type" Padding="5" >
+                    <Expander Header="show more">
+                        <StackPanel x:Name="TypeWines"  RadioButton.Checked="TypeWines_Checked">
+                    <RadioButton GroupName="Type" Margin="3">Red</RadioButton>
+                    <RadioButton GroupName="Type" Margin="3">White</RadioButton>
+                    <RadioButton GroupName="Type" Margin="3">Rose</RadioButton>
+                </StackPanel>
+                        </Expander>
+                </GroupBox>
+            <GroupBox Header="Country" Padding="5" >
+                    <Expander Header="show more">
+                        <StackPanel x:Name="CountryWines"  RadioButton.Checked="CountryWines_Checked">
+                        <RadioButton GroupName="Country"  Margin="3">Argentina</RadioButton>
+                        <RadioButton GroupName="Country" Margin="3">Australia</RadioButton>
+                            <RadioButton GroupName="Country" Margin="3">Austria</RadioButton>
+                            <RadioButton GroupName="Country" Margin="3">Chile</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">England</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">France</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">Germany</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">Israel</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">Italy</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">New Zealand</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">Portugal</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">South Africa</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">Spain</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">Switzerland</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">Ukraine</RadioButton>
+                                <RadioButton GroupName="Country" Margin="3">United States</RadioButton>
+                            </StackPanel>
+                    </Expander>
+                
+            </GroupBox>
+                <GroupBox Header="Vintage" Padding="5" >
+                    <Expander Header="show more">
+                        <StackPanel x:Name="VintageWines"  RadioButton.Checked="VintageWines_Checked">
+                        <RadioButton GroupName="Vintage"  Margin="3">1939</RadioButton>
+                        <RadioButton GroupName="Vintage" Margin="3">1940</RadioButton>
+                        <RadioButton GroupName="Vintage" Margin="3">1941</RadioButton>
+                        <RadioButton GroupName="Vintage" Margin="3">1942</RadioButton>
+                            <RadioButton GroupName="Vintage" Margin="3">1943</RadioButton>
+                            <RadioButton GroupName="Vintage" Margin="3">1944</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1945</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1946</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1947</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1948</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1949</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1950</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1951</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1952</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1953</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1954</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1955</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1956</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1957</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1958</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1959</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1960</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1961</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1962</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1963</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1964</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1965</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1966</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1967</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1968</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1969</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1970</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1971</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1972</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1973</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1974</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1975</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1976</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1977</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1978</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1979</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1980</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1981</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1982</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1983</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1984</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1985</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1986</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1987</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1988</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1989</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1990</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1991</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1992</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1993</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1994</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1995</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1996</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1997</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1998</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">1999</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2000</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2001</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2002</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2003</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2004</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2005</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2006</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2007</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2008</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2009</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2010</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2011</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2012</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2013</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2014</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2015</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2016</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2017</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2018</RadioButton>
+                                <RadioButton GroupName="Vintage" Margin="3">2019</RadioButton>
+                                
+
+                        </StackPanel>
+                    </Expander>
+                   
+                </GroupBox>
+                <GroupBox Header="Price" Padding="5" >
+                    <Expander Header="show more">
+                        <StackPanel x:Name="PriceWines"  RadioButton.Checked="PriceWines_Checked">
+                        <RadioButton GroupName="Price"  Margin="3">Under £30</RadioButton>
+                        <RadioButton GroupName="Price" Margin="3">£30 - £100</RadioButton>
+                        <RadioButton GroupName="Price" Margin="3">£100 - £250</RadioButton>
+                        <RadioButton GroupName="Price" Margin="3">£250 - £500</RadioButton>
+                        <RadioButton GroupName="Price" Margin="3">£500 - £1000</RadioButton>
+                        <RadioButton GroupName="Price" Margin="3">Over £1000</RadioButton>
+                    </StackPanel>
+                        </Expander>
+                </GroupBox>
+                <GroupBox Header="Volume" Padding="5" >
+                    <Expander Header="show more">
+                        <StackPanel x:Name="VolumeWines"  RadioButton.Checked="VolumeWines_Checked">
+                        <RadioButton GroupName="Volume"  Margin="3">25 cl</RadioButton>
+                        <RadioButton GroupName="Volume"  Margin="3">37,5 cl</RadioButton>
+                        <RadioButton GroupName="Volume"  Margin="3">50 cl</RadioButton>
+                        <RadioButton GroupName="Volume"  Margin="3">62 cl</RadioButton>
+                        <RadioButton GroupName="Volume"  Margin="3">65 cl</RadioButton>
+                       
+                                <RadioButton GroupName="Volume"  Margin="3">70 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">75 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">100 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">112,5 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">150 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">160 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">225 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">300 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">375 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">450 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">500 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">600 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">675 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">750 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">900 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">1200 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">1270 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">1500 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">1800 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">2250 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">2400 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">2550 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">2700 cl</RadioButton>
+                                <RadioButton GroupName="Volume"  Margin="3">4050 cl</RadioButton>
+                            </StackPanel>
+                        </Expander>
+                  
+                </GroupBox>
+                <Button x:Name="btnSelectWines" Content="Select" IsDefault="True" VerticalAlignment="Bottom" HorizontalAlignment="Center"  Width="130" Height="35" Margin ="5 5 5 5" FontSize="15" Click="BtnSelectWines_Click" />
+            </StackPanel>
+        </ScrollViewer>
+        <TextBlock    Grid.Column="1"  Grid.ColumnSpan="4" Grid.Row="0"  TextAlignment="Center" Margin="5 20 5 10" FontStyle="Italic" FontSize="20">
+           Browse Wines
+            </TextBlock>
+        <TextBlock Grid.Column="1"  Grid.Row="0" TextAlignment="Center" Margin="5 20 5 5">Click to sort by:</TextBlock>
+        <ComboBox x:Name="sort"  Height="20" Width="120" VerticalAlignment="Top" Grid.Column="1"  Grid.Row="0" Margin="5 40 5 5" SelectionChanged="ComboBox_Selected">
+           
+                <ComboBoxItem Background="AntiqueWhite">
+                    <TextBlock>Default sort</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem Background="AntiqueWhite">
+                    <TextBlock>Lowest price</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem Background="AntiqueWhite">
+                    <TextBlock>Highest price</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem Background="AntiqueWhite">
+                    <TextBlock>A-Z</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem Background="AntiqueWhite">
+                    <TextBlock>Z-A</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem Background="AntiqueWhite">
+                    <TextBlock>Vintage(old to new)</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem  Background="AntiqueWhite">
+                    <TextBlock>Vintage(new to old)</TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+            <ScrollViewer Grid.Column="1"  Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="5" Margin="5 70 5 5" CanContentScroll="True" >
+            <WrapPanel x:Name="ListofWines"  Background="#DEB887">
+
+            </WrapPanel>
+                </ScrollViewer>
+
+        </Grid>
+  
+    
+</UserControl>

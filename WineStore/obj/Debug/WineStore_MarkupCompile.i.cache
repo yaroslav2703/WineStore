@@ -1,0 +1,20 @@
+﻿WineStore
+
+
+winexe
+C#
+.cs
+D:\3 КУРС\КП\WineStore\WineStore\obj\Debug\
+WineStore
+none
+false
+DEBUG;TRACE
+D:\3 КУРС\КП\WineStore\WineStore\App.xaml
+21-1392575172
+
+281656199096
+24464590033
+Admin_page_elements\AddWines.xaml;Admin_page_elements\AddWinesAvailable.xaml;Admin_page_elements\Export.xaml;UserControls\BasketProduct.xaml;UserControls\EditPaymentInformation.xaml;UserControls\EditShippingInformation.xaml;UserControls\OrderInformation.xaml;UserControls\Orders.xaml;UserControls\PaymentInformation.xaml;UserControls\Product.xaml;UserControls\ShippingInformation.xaml;Windows\MainWindow.xaml;Style\Styles.xaml;UserControls\About.xaml;UserControls\Basket.xaml;UserControls\My_account.xaml;UserControls\Start_page.xaml;UserControls\Wines.xaml;Windows\ForAdmin.xaml;Windows\Login.xaml;Windows\Registration.xaml;
+
+False
+

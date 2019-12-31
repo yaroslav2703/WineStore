@@ -1,0 +1,27 @@
+
+CREATE INDEX in_user
+ON "USER"(LOGIN);
+
+CREATE INDEX in_session
+ON "SESSION"(LOGIN);
+
+CREATE INDEX in_wine
+ON "WINE"(PRODUCT_CODE);
+
+CREATE INDEX in_basket_user
+ON BASKET("USER");
+
+CREATE INDEX in_basket_wine
+ON BASKET(WINE);
+
+CREATE INDEX in_order_history_user
+ON ORDER_HISTORY("USER");
+
+CREATE INDEX in_order_history_info
+ON ORDER_HISTORY(Info);
+
+CREATE INDEX in_order_number
+ON "ORDER"(ORDER_NUMBER);
+
+CREATE INDEX in_order_wine
+ON "ORDER"(WINE);

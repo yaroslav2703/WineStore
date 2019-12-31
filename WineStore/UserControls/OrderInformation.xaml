@@ -1,0 +1,127 @@
+﻿<UserControl x:Class="WineStore.UserControls.OrderInformation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WineStore.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="360" d:DesignWidth="800">
+    
+   
+
+
+
+
+
+
+        <StackPanel x:Name="StackMain" Background="#FFEBCD">
+
+            <TextBlock  Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" TextAlignment="Center"  FontStyle="Italic" FontSize="20">
+            Order Information
+            </TextBlock>
+
+            <GroupBox Header="Shipping information" Padding="5">
+                    <StackPanel>
+
+                       
+
+                        <TextBlock FontSize="12" Margin="130 5 5 5">
+                          First name
+                        </TextBlock>
+
+                        <TextBox  x:Name="Fname"  FontSize="13" TextAlignment="Left" Width="250" >
+
+                        </TextBox>
+
+
+                        <TextBlock FontSize="12" Margin="130 5 5 5">
+                          Last name
+                        </TextBlock>
+
+                        <TextBox  x:Name="Lname"  FontSize="13" TextAlignment="Left" Width="250" >
+
+                        </TextBox>
+
+                        <TextBlock FontSize="12" Margin="130 5 5 5">
+                          Street address
+                        </TextBlock>
+
+                        <TextBox  x:Name="StreetAddress"  FontSize="13" TextAlignment="Left" Width="250" >
+
+                        </TextBox>
+
+                        <TextBlock FontSize="12" Margin="130 5 5 5">
+                          City
+                        </TextBlock>
+
+                        <TextBox  x:Name="City"  FontSize="13" TextAlignment="Left" Width="250" >
+
+                        </TextBox>
+
+
+                        <TextBlock FontSize="12" Margin="130 5 5 5">
+                          Phone Number
+                        </TextBlock>
+
+                        <TextBox  x:Name="PhoneNumber"  FontSize="13" TextAlignment="Left" Width="250" >
+
+                        </TextBox>
+
+                    </StackPanel>
+                   
+            </GroupBox>
+                <GroupBox Header="Payment information" Padding="5">
+                   
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+
+                        <StackPanel HorizontalAlignment="Left">
+                        <TextBlock FontSize="12" Margin="5 5 5 5">
+                          Card number
+                        </TextBlock>
+
+                            <TextBox  x:Name="CardNumber"  FontSize="13" TextAlignment="Left" Width="100" >
+
+                            </TextBox>
+
+                        </StackPanel>
+
+                        <StackPanel HorizontalAlignment="Left">
+
+                            <TextBlock FontSize="12" Margin="5 5 5 5">
+                          Expiration date
+                            </TextBlock>
+
+                            <TextBox  x:Name="ExpirationDate"  FontSize="13" TextAlignment="Left" Width="60" >
+                                MM/YY
+                            </TextBox>
+
+                        </StackPanel>
+
+                        <StackPanel HorizontalAlignment="Left">
+
+                            <TextBlock FontSize="12" Margin="5 5 5 5">
+                          CVC
+                            </TextBlock>
+
+                            <TextBox  x:Name="CVC"  FontSize="13" TextAlignment="Left" Width="30" >
+                              CVC
+                            </TextBox>
+
+                        </StackPanel>
+                            
+                            
+                            
+                       </StackPanel>
+                        
+                                    
+                </GroupBox>
+
+                <Button x:Name="btnComplete" Grid.Column="3" Grid.Row="4"  Content="COMPLETE" IsDefault="True"  HorizontalAlignment="Center"  Width="130" Height="35" Margin ="5 5 5 5" FontSize="15" Click="BtnComplete_Click">
+                  
+                </Button>
+
+        </StackPanel>
+              
+       
+    
+</UserControl>

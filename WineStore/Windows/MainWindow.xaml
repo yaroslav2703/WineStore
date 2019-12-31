@@ -1,0 +1,50 @@
+﻿<Window x:Class="WineStore.MainWindow"
+        x:ClassModifier="public"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WineStore"
+        mc:Ignorable="d"
+        x:Name="MainWin" 
+        x:FieldModifier="public"
+        Title="WineStore"
+        Height="500" Width="800"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        Style="{DynamicResource WindowStyle}">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/HD_08-01-21090259_AW_0.jpg" />
+    </Window.Background>
+    <Grid>
+        <StackPanel>
+            <Grid Height="30">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
+                    <Button Content="Logout"  Foreground="#FFA2A2A2" FontSize="15" VerticalAlignment="Center" Click="exitUser_Click" />
+                    
+                </StackPanel>
+            </Grid>
+
+            <Grid>
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0,0,0,0"  Background="#DEB887" Opacity="0.9">
+                    <Button x:Name="btnTheme" Uid="0"  Content="WINES" Width="70"  Height="50" Background="#DEB887"  Foreground="#FFEBCD" FontSize="20" Margin="215 0 5 0"  Click="Button_Click"/>
+                    <Button x:Name="btn2" Uid="4"  Content="BASKET" Width="80"  Height="50" Background="#DEB887"  Foreground="#FFEBCD" FontSize="20" Margin="0 0 5 0" Click="Button_Click" />
+                    <Button x:Name="btnhHelp2" Uid="5"  Content="FAQs" Width="60" Height="50" Background="#DEB887"  Foreground="#FFEBCD" FontSize="20" Margin="0 0 5 0" Click="Button_Click"/>
+                    <Button x:Name="btnhHelp3" Uid="6"  Content="MY ACCOUNT" Width="130" Height="50" Background="#DEB887"  Foreground="#FFEBCD" FontSize="20" Margin="0 0 50 0" Click="Button_Click"/>
+                </StackPanel>
+
+                <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FF2196F3" HorizontalAlignment="Left" Margin="50 -500 0 0"/>
+
+                <Grid x:Name="GridMain" Opacity="0.9" Height="360" Margin="0 50 0 0" Background="#FFEBCD">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+
+
+                </Grid>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

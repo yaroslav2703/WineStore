@@ -1,0 +1,44 @@
+﻿<Window x:Class="WineStore.ForAdmin"
+        x:ClassModifier="public"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WineStore"
+        mc:Ignorable="d"
+        x:Name="forAdmin" 
+        x:FieldModifier="public"
+        Title="страница администратора магазина"
+        Height="500" Width="800"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        Style="{DynamicResource WindowStyle}">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/HD_08-01-21090259_AW_0.jpg" />
+    </Window.Background>
+    <Grid>
+        <StackPanel>
+            <Grid Height="30">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20 0">
+                    <Button Content="Logout"  Foreground="#FFA2A2A2" FontSize="15" VerticalAlignment="Center" Click="exitAdmin_Click" />
+
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="GridMain" Opacity="0.9" Height="360" Margin="0 20 0 30" Background="#FFEBCD">
+
+                <StackPanel x:Name="start"  Orientation="Vertical" VerticalAlignment="Top" Margin="250,30,250,10"  Background="#DEB887" Opacity="0.9">
+                    <Button x:Name="btnWinesA" Uid="0"  Content="Add New Wines" Height="50"  Foreground="#FFEBCD" FontSize="20" Click="ButtonA_Click" />
+                    <Button x:Name="btnWinesAAvail" Uid="1"  Content="Add Available Wines" Height="50"   Foreground="#FFEBCD" FontSize="20"  Click="btnWinesAAvail_Click"/>
+                    <Button x:Name="btnWinesAXMLImport" Uid="2"  Content="Add Wine from XML" Height="50"   Foreground="#FFEBCD" FontSize="20"  Click="btnWinesAXMLImport_Click"/>
+                    <Button x:Name="btnWinesAXMLExport" Uid="2"  Content="Insert All Wines to XML" Height="50"   Foreground="#FFEBCD" FontSize="20"  Click="btnWinesAXMLExport_Click"/>
+                </StackPanel>
+
+                <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FF2196F3" HorizontalAlignment="Left" Margin="50 -500 0 0"/>
+
+           
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
+
